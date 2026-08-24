@@ -170,30 +170,41 @@ NORMALIZATION = "LOG10_RA"
 # Input file
 # -----------------------------------------------------------------------------
 
-EXCEL_PATH = "Allmerged_16Slevel-2.xlsx"
 
+# Input phylum-level feature table
+EXCEL_PATH = (
+    Path("data")
+    / "Allmerged_16Slevel-2.xlsx"
+)
 
 # -----------------------------------------------------------------------------
-# Output directory
-# -----------------------------------------------------------------------------
-#
-# Results are written to:
-#
-#     ./output/log10_ra/
-#
-# or:
-#
-#     ./output/clr/
+# Tabular/statistical outputs
 # -----------------------------------------------------------------------------
 
+#
+# Primary LOG10_RA:
+#   output/ml/log10_ra/
+#
+# CLR sensitivity analysis:
+#   output/ml/clr/
 OUTPUT_DIR = (
     Path("output")
+    / "ml"
     / NORMALIZATION.lower()
 )
 
 OUTPUT_DIR.mkdir(
     parents=True,
-    exist_ok=True,
+    exist_ok=True
+)
+
+
+# Final manuscript figures
+FIGURE_DIR = Path("figures")
+
+FIGURE_DIR.mkdir(
+    parents=True,
+    exist_ok=True
 )
 
 
