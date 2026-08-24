@@ -376,16 +376,15 @@ These generated outputs can be recreated by running the corresponding analysis s
 
 The processed data and analysis code provided in this repository support reproduction of the analyses reported in the accompanying manuscript.
 
----
-
-## Manuscript status
-
-The associated manuscript is currently under review at *Current Research in Microbial Sciences*.
-
-The bibliographic information in this README will be updated following publication.
 
 ---
+Code and processed data associated with the manuscript:
 
+**"Group-Aware Machine Learning Identifies Depth-Associated Soil Bacterial Phyla Consistent Across Plant Systems and Amendments"**  
+Zahra et al.
+
+
+---
 ## Citation
 
 This repository accompanies the following manuscript currently under review:
