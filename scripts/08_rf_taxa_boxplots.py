@@ -19,6 +19,33 @@
 #   6. Creates partitioned boxplots
 #   7. Saves statistics and publication-quality PNG/PDF figures
 # =============================================================================
+# =============================================================================
+# 04) BOXPLOTS FOR RANDOM-FOREST-PRIORITIZED TAXA
+#
+# Upper-soil-associated taxa on the LEFT
+# Lower-soil-associated taxa on the RIGHT
+#
+# This script is designed to run AFTER:
+#   01_groupaware_depth_classification.py
+#   03_rf_feature_extraction_by_depth.py
+#
+# It uses the taxa prioritized by Random Forest and extracted in the
+# preceding feature-extraction analysis:
+#
+#   output/rf_features/RF_top_features_by_depth_log10_ra.csv
+#
+# The script:
+#   1. Reloads the original 16S abundance table
+#   2. Calculates relative abundance across all samples
+#   3. Uses the Upper/Lower-associated RF taxa selected previously
+#   4. Performs Mann-Whitney U tests comparing Upper vs Lower soil
+#   5. Optionally applies FDR correction
+#   6. Creates partitioned boxplots
+#   7. Saves statistics and publication-quality PNG/PDF figures
+#
+# Outputs are written to:
+#   output/boxplots/
+# =============================================================================
 
 
 # =============================================================================
