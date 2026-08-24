@@ -34,19 +34,17 @@ from matplotlib.lines import Line2D
 # 1) PATHS / SETTINGS
 # =============================================================================
 
-EXCEL_PATH = "Allmerged_16Slevel-2.xlsx"
+EXCEL_PATH = (
+    Path("data")
+    / "Allmerged_16Slevel-2.xlsx"
+)
 
-# All PCA outputs are written to a repository-relative output directory.
-# The directory is created automatically if it does not already exist.
 OUTPUT_DIR = (
     Path("output")
     / "pca"
 )
 
-OUTPUT_DIR.mkdir(
-    parents=True,
-    exist_ok=True
-)
+FIGURE_DIR = Path("figures")
 
 sample_col = "index"
 depth_col = "SoilProfile"
