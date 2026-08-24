@@ -1,3 +1,15 @@
+## Use and permissions
+
+This repository and its contents, including code, processed data, metadata,
+analysis outputs, figures, and documentation, accompany a manuscript currently
+under review.
+
+Reuse, redistribution, modification, or use of these materials for independent
+or derivative research, publications, presentations, or other scholarly or
+commercial outputs requires prior written permission from the copyright holders.
+
+**All rights reserved. See `LICENSE` for the full terms.**
+
 # Depth-Associated Soil Bacterial Phyla — Analysis Pipeline
 
 Code and processed data associated with the manuscript:
@@ -388,4 +400,4 @@ No Zenodo DOI is currently associated with this repository.
 
 ## License
 
-Released under the MIT License. See `LICENSE`.
+ See `LICENSE`.
