@@ -15,7 +15,7 @@ commercial outputs requires prior written permission from the copyright holders.
 Code and processed data associated with the manuscript:
 
 **"Group-Aware Machine Learning Identifies Depth-Associated Soil Bacterial Phyla Consistent Across Plant Systems and Amendments"**  
-Zahra et al. Manuscript under review at *Current Research in Microbial Sciences*.
+Zahra et al.
 
 This repository provides the code and processed data used for the analyses reported in the accompanying manuscript, including 16S rRNA sequence processing, phylum-level compositional analysis, principal component analysis (PCA), treatment-adjusted differential abundance analysis (ANCOM-BC), and group-aware supervised classification using Random Forest, XGBoost, and support vector machines (SVM).
 
