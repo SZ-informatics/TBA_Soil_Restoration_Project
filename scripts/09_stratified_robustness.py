@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """
+09_stratified_robustness.py
+
 Stratified robustness analysis for soil-depth classification.
 
 Primary preprocessing
@@ -38,18 +40,21 @@ Within each stratum:
 The same optimized Random Forest hyperparameter configuration from the
 pooled LOG10_RA analysis is used within every stratum.
 
-Outputs
--------
-Saved to:
+Repository structure
+--------------------
+Input:
+    data/Allmerged_16Slevel-2.xlsx
 
-    ./output/stratified/
+Tabular outputs:
+    output/stratified/
+        stratified_results_log10_ra.csv
+        stratified_top_features_log10_ra.csv
+        stratified_taxa_occurrence_log10_ra.csv
 
-Files:
-    stratified_results_log10_ra.csv
-    stratified_top_features_log10_ra.csv
-    stratified_taxa_occurrence_log10_ra.csv
-    Fig_stratified_importance_log10_ra.png
-    Fig_stratified_importance_log10_ra.pdf
+Figure outputs:
+    figures/
+        Fig_stratified_importance_log10_ra.png
+        Fig_stratified_importance_log10_ra.pdf
 """
 
 
@@ -58,7 +63,6 @@ Files:
 # =============================================================================
 
 from pathlib import Path
-
 import warnings
 
 import numpy as np
@@ -94,18 +98,19 @@ from sklearn.ensemble import RandomForestClassifier
 
 RANDOM_STATE = 42
 
-EXCEL_PATH = "Allmerged_16Slevel-2.xlsx"
+
+# -----------------------------------------------------------------------------
+# Input data
+# -----------------------------------------------------------------------------
+
+EXCEL_PATH = (
+    Path("data")
+    / "Allmerged_16Slevel-2.xlsx"
+)
 
 
 # -----------------------------------------------------------------------------
-# Output directory
-# -----------------------------------------------------------------------------
-#
-# All stratified robustness outputs are written to:
-#
-#     ./output/stratified/
-#
-# The directory is created automatically if it does not exist.
+# Tabular/statistical outputs
 # -----------------------------------------------------------------------------
 
 OUTPUT_DIR = (
@@ -120,11 +125,22 @@ OUTPUT_DIR.mkdir(
 
 
 # -----------------------------------------------------------------------------
-# Number of taxa displayed for each depth direction within each stratum
+# Final manuscript figures
+# -----------------------------------------------------------------------------
+
+FIGURE_DIR = Path("figures")
+
+FIGURE_DIR.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
+
+# -----------------------------------------------------------------------------
+# Number of taxa displayed for each direction within each stratum
 # -----------------------------------------------------------------------------
 
 K_LOWER = 6
-
 K_UPPER = 6
 
 
@@ -140,7 +156,6 @@ MAX_SPLITS = 5
 # -----------------------------------------------------------------------------
 
 LOWER_COLOR = "#2c6fbb"
-
 UPPER_COLOR = "#e08214"
 
 
@@ -181,7 +196,12 @@ print(
 
 
 print(
-    f"Output directory: {OUTPUT_DIR}"
+    f"Tabular output directory: {OUTPUT_DIR}"
+)
+
+
+print(
+    f"Figure directory: {FIGURE_DIR}"
 )
 
 
@@ -201,6 +221,15 @@ print(
 # =============================================================================
 # 1) LOAD DATA
 # =============================================================================
+
+if not EXCEL_PATH.exists():
+
+    raise FileNotFoundError(
+        "\nInput file not found:\n"
+        f"{EXCEL_PATH}\n\n"
+        "Run this script from the repository root directory."
+    )
+
 
 df = pd.read_excel(
     EXCEL_PATH,
@@ -323,7 +352,10 @@ print(
 )
 
 
-# Feature labels used for output
+# -----------------------------------------------------------------------------
+# Feature labels
+# -----------------------------------------------------------------------------
+
 feature_names = np.asarray(
     counts.columns
 )
@@ -484,12 +516,12 @@ def log10_relative_abundance_transform(
     pseudocount=1e-6
 ):
     """
-    Convert sample counts to relative abundance, then apply:
+    Convert sample counts to relative abundance and then apply:
 
         log10(relative abundance + pseudocount)
 
-    This is the same primary preprocessing used in the pooled LOG10_RA
-    soil-depth classification analysis.
+    This is the same primary preprocessing used in the pooled
+    LOG10_RA soil-depth classification analysis.
     """
 
     A = np.asarray(
@@ -511,19 +543,20 @@ def log10_relative_abundance_transform(
     )
 
 
+    # Avoid division by zero
     row_sums[
         row_sums == 0
     ] = 1.0
 
 
-    # Relative abundance
+    # Convert to relative abundance
     RA = (
         A
         / row_sums
     )
 
 
-    # LOG10 transformation
+    # Apply LOG10 transformation
     return np.log10(
         RA
         + pseudocount
@@ -994,7 +1027,7 @@ for label, mask in strata:
 
 
     # -------------------------------------------------------------------------
-    # Store panel data
+    # Store panel information for plotting
     # -------------------------------------------------------------------------
 
     panel_taxa = [
@@ -1276,7 +1309,7 @@ features_df = pd.DataFrame(
 
 
 # =============================================================================
-# 15) SAVE RESULTS
+# 15) SAVE TABULAR RESULTS
 # =============================================================================
 
 summary_output_path = (
@@ -1328,10 +1361,6 @@ print(
 
 # =============================================================================
 # 16) IDENTIFY RECURRING TOP TAXA ACROSS STRATA
-# =============================================================================
-#
-# Counts how often each depth-associated taxon appears among the selected
-# leading features across the six strata.
 # =============================================================================
 
 occurrence_table = (
@@ -1590,17 +1619,17 @@ plt.tight_layout(
 
 
 # =============================================================================
-# 19) SAVE FIGURE
+# 19) SAVE FIGURE TO figures/
 # =============================================================================
 
 figure_png_path = (
-    OUTPUT_DIR
+    FIGURE_DIR
     / "Fig_stratified_importance_log10_ra.png"
 )
 
 
 figure_pdf_path = (
-    OUTPUT_DIR
+    FIGURE_DIR
     / "Fig_stratified_importance_log10_ra.pdf"
 )
 
@@ -1708,13 +1737,27 @@ print(
 
 
 print(
-    f"\nAll outputs saved to:\n"
-    f"{OUTPUT_DIR}"
+    "\nTabular outputs saved to:"
 )
 
 
 print(
-    "\nSaved files:"
+    f"  {OUTPUT_DIR}"
+)
+
+
+print(
+    "\nFigure outputs saved to:"
+)
+
+
+print(
+    f"  {FIGURE_DIR}"
+)
+
+
+print(
+    "\nSaved result files:"
 )
 
 
@@ -1730,6 +1773,11 @@ print(
 
 print(
     f"  3. {occurrence_output_path.name}"
+)
+
+
+print(
+    "\nSaved figure files:"
 )
 
 
