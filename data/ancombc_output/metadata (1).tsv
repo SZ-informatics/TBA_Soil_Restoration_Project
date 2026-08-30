@@ -1,0 +1,235 @@
+sample-id	TimePeriod	Species	Amendment	SoilProfile	Block
+1-EX1A-16S	C	Native Grass	Control	U	1
+10-EXX10A-16S	C	SOBI	Control	U	2
+11-EXX11A-16S	C	Native Grass	TBA	U	2
+12-EX12A-16S	C	Native Grass	Biochar	U	2
+13-EXX13A-16S	C	PS	Control	U	2
+14-EXX14A-16S	C	SOBI	Biochar	U	2
+15-EX15A-16S	C	Native Grass	Control	U	2
+16-EX16A-16S	C	PS	Biochar	U	2
+17-EXX17A-16S	C	SOBI	TBA	U	2
+18-EXX8A-16S	C	PS	TBA	U	2
+19-EXX19A-16S	C	SOBI	Control	U	3
+2-EXX2A-16S	C	SOBI	Control	U	1
+20-EX20A-16S	C	PS	Control	U	3
+21-EXX21A-16S	C	Native Grass	Control	U	3
+22-EXX22A-16S	C	SOBI	Biochar	U	3
+23-EXX23A-16S	C	PS	TBA	U	3
+24-EX24A-16S	C	Native Grass	Biochar	U	3
+25-EXX25A-16S	C	SOBI	TBA	U	3
+26-EXX26A-16S	C	PS	Biochar	U	3
+27-EXX27A-16S	C	Native Grass	TBA	U	3
+28-EXX28A-16S	C	PS	Biochar	U	4
+29-EXX29A-16S	C	Native Grass	Biochar	U	1
+3-EXX3A-16S	C	PS	Control	U	1
+30-EX30A-16S	C	SOBI	Biochar	U	4
+31-EXX31A-16S	C	PS	TBA	U	4
+32-EXX32A-16S	C	SOBI	Control	U	4
+33-EX33A-16S	C	Native Grass	TBA	U	4
+34-EXX34A-16S	C	PS	Control	U	4
+35-EX35A-16S	C	Native Grass	Control	U	4
+36-EX36B-16S	C	SOBI	TBA	U	4
+37-EX1B-16S	C	Native Grass	Control	L	1
+38-EXX2B-16S	C	SOBI	Control	L	1
+39-EX3B-16S	C	PS	Control	L	1
+4-EX4A-16S	C	Native Grass	TBA	U	1
+40-EX4B-16S	C	Native Grass	TBA	L	1
+41-EXX5B-16S	C	PS	Biochar	L	1
+42-EX6B-16S	C	SOBI	TBA	L	1
+43-EX7B-16S	C	Native Grass	Biochar	L	1
+44-EXX8B-16S	C	PS	TBA	L	1
+45-EXX9B-16S	C	SOBI	Biochar	L	1
+46-EXX10B-16S	C	SOBI	Control	L	1
+47-EXX11B-16S	C	Native Grass	TBA	L	2
+48-EX12B-16S	C	Native Grass	Biochar	L	2
+49-EX13B-16S	C	PS	Control	L	2
+5-EX5A-16S	C	PS	Biochar	U	2
+50-EXX14B-16S	C	SOBI	Biochar	L	2
+51-EXX15B-16S	C	Native Grass	Control	L	2
+52-EX16B-16S	C	PS	Biochar	L	2
+53-EXX17B-16S	C	SOBI	TBA	L	2
+54-EXX18B-16S	C	PS	TBA	L	2
+55-EX19B-16S	C	SOBI	Control	L	2
+56-EX20B-16S	C	PS	Control	L	3
+57-EX21B-16S	C	Native Grass	Control	L	3
+58-EXX22B-16S	C	SOBI	Biochar	L	4
+59-EXX23B-16S	C	PS	TBA	L	3
+6-EX6A-16S	C	SOBI	TBA	U	1
+60-EXX24B-16S	C	Native Grass	Biochar	L	2
+61-EXX25B-16S	C	SOBI	TBA	L	3
+62-EXX26B-16S	C	PS	Biochar	L	3
+63-EXX27B-16S	C	Native Grass	TBA	L	3
+64-EXX28B-16S	C	PS	Biochar	L	4
+65-EXX29B-16S	C	Native Grass	Biochar	L	4
+66-EXX30B-16S	C	SOBI	Biochar	L	4
+67-EX31B-16S	C	PS	TBA	L	4
+68-EX32B-16S	C	SOBI	Control	L	4
+69-EXX33B-16S	C	Native Grass	TBA	L	4
+7-EX7A-16S	C	Native Grass	Biochar	U	4
+70-EXX34B-16S	C	PS	Control	L	4
+71-EXX35B-16S	C	Native Grass	Control	L	4
+72-EXX36B-16S	C	SOBI	TBA	L	4
+8-EX8A-16S	C	PS	TBA	U	1
+9-EX9A-16S	C	SOBI	Biochar	U	1
+73-1-Jessup-16S	A	Native Grass	TBA	U	1
+74-2-Jessup-16S	A	Native Grass	Biochar	U	1
+75-3-Jessup-16S	A	PS	Control	L	1
+76-4-Jessup-16S	A	PS	TBA	L	1
+77-5-Jessup-16S	A	SOBI	Biochar	L	1
+78-6-Jessup-16S	A	Native Grass	Biochar	L	1
+79-7-Jessup-16S	A	Native Grass	Control	U	1
+80-8-Jessup-16S	A	Native Grass	Control	L	1
+81-9-Jessup-16S	A	PS	TBA	U	1
+82-10-Jessup-16S	A	PS	Biochar	U	1
+83-11-Jessup-16S	A	SOBI	TBA	L	1
+84-12-Jessup-16S	A	SOBI	Biochar	L	1
+85-13-Jessup-16S	A	Native Grass	TBA	L	1
+86-14-Jessup-16S	A	SOBI	Control	L	1
+87-15-Jessup-16S	A	PS	Control	U	1
+88-16-Jessup-16S	A	Native Grass	Biochar	U	1
+89-17-Jessup-16S	A	SOBI	Control	U	1
+90-18-Jessup-16S	A	SOBI	TBA	U	1
+1-SZ1-16S	B	Native Grass	Control	U	1
+10-SZ10-16S	B	SOBI	Control	U	2
+11-SZ11-16S	B	Native Grass	TBA	U	2
+12-SZ12-16S	B	Native Grass	Biochar	U	2
+13-SZ13-16S	B	PS	Control	U	2
+14-SZ14-16S	B	SOBI	Biochar	U	2
+15-SZ15-16S	B	Native Grass	Control	U	2
+16-SZ16-16S	B	PS	Biochar	U	2
+17-SZ17-16S	B	SOBI	TBA	U	2
+18-SZ18-16S	B	PS	TBA	U	2
+19-SZ19-16S	B	SOBI	Control	U	3
+2-SZ2-16S	B	SOBI	Control	U	1
+20-SZ20-16S	B	PS	Control	U	3
+21-SZ21-16S	B	Native Grass	Control	U	3
+22-SZ22-16S	B	SOBI	Biochar	U	3
+23-SZ23-16S	B	PS	TBA	U	3
+24-SZ24-16S	B	Native Grass	Biochar	U	3
+25-SZ25-16S	B	SOBI	TBA	U	3
+26-SZ26-16S	B	PS	Biochar	U	3
+27-SZ27-16S	B	Native Grass	TBA	U	3
+28-SZ28-16S	B	PS	Biochar	U	4
+29-SZ29-16S	B	Native Grass	Biochar	U	1
+3-SZ3-16S	B	PS	Control	U	1
+30-SZ30-16S	B	SOBI	Biochar	U	4
+31-SZ31-16S	B	PS	TBA	U	4
+32-SZ32-16S	B	SOBI	Control	U	4
+33-SZ33-16S	B	Native Grass	TBA	U	4
+34-SZ34-16S	B	PS	Control	U	4
+35-SZ35-16S	B	Native Grass	Control	U	4
+36-SZ36-16S	B	SOBI	TBA	U	4
+37-SZ1B-16S	B	Native Grass	Control	L	1
+38-SZ2B-16S	B	SOBI	Control	L	1
+39-SZ3B-16S	B	PS	Control	L	1
+4-SZ4-16S	B	Native Grass	TBA	U	1
+40-SZ4B-16S	B	Native Grass	TBA	L	1
+41-SZ5B-16S	B	PS	Biochar	L	1
+42-SZ6B-16S	B	SOBI	TBA	L	1
+43-SZ7B-16S	B	Native Grass	Biochar	L	1
+44-SZ8B-16S	B	PS	TBA	L	1
+45-SZ9B-16S	B	SOBI	Biochar	L	1
+46-SZ10B-16S	B	SOBI	Control	L	1
+47-SZ11B-16S	B	Native Grass	TBA	L	2
+48-SZ12B-16S	B	Native Grass	Biochar	L	2
+49-SZ13B-16S	B	PS	Control	L	2
+5-SZ5-16S	B	PS	Biochar	U	2
+50-SZ14B-16S	B	SOBI	Biochar	L	2
+51-SZ15B-16S	B	Native Grass	Control	L	2
+52-SZ16B-16S	B	PS	Biochar	L	2
+53-SZ17B-16S	B	SOBI	TBA	L	2
+54-SZ18B-16S	B	PS	TBA	L	2
+55-SZ19B-16S	B	SOBI	Control	L	2
+56-SZ20B-16S	B	PS	Control	L	3
+57-SZ21B-16S	B	Native Grass	Control	L	3
+58-SZ22B-16S	B	SOBI	Biochar	L	3
+59-SZ23B-16S	B	PS	TBA	L	3
+6-SZ6-16S	B	SOBI	TBA	U	1
+60-SZ24B-16S	B	Native Grass	Biochar	L	2
+61-SZ25B-16S	B	SOBI	TBA	L	3
+62-SZ26B-16S	B	PS	Biochar	L	3
+63-SZ27B-16S	B	Native Grass	TBA	L	3
+64-SZ28B-16S	B	PS	Biochar	L	4
+65-SZ29B-16S	B	Native Grass	Biochar	L	4
+66-SZ30B-16S	B	SOBI	Biochar	L	4
+67-SZ31B-16S	B	PS	TBA	L	4
+68-SZ32B-16S	B	SOBI	Control	L	4
+69-SZ33B-16S	B	Native Grass	TBA	L	4
+7-SZ7-16S	B	Native Grass	Biochar	U	4
+70-SZ34B-16S	B	PS	Control	L	4
+71-SZ35B-16S	B	Native Grass	Control	L	4
+72-SZ36B-16S	B	SOBI	TBA	L	4
+8-SZ8-16S	B	PS	TBA	U	1
+9-SZ9-16S	B	SOBI	Biochar	U	1
+01-1A-16S	D	Native Grass	Control	U	1
+10-10A-16S	D	SOBI	Control	U	2
+11-11A-16S	D	Native Grass	TBA	U	2
+12-12A-16S	D	Native Grass	Biochar	U	2
+13-13A-16S	D	PS	Control	U	2
+14-14A-16S	D	SOBI	Biochar	U	2
+15-15A-16S	D	Native Grass	Control	U	2
+16-16A-16S	D	PS	Biochar	U	2
+17-17A-16S	D	SOBI	TBA	U	2
+18-18A-16S	D	PS	TBA	U	2
+19-19A-16S	D	SOBI	Control	U	3
+02-2A-16S	D	SOBI	Control	U	1
+20-20A-16S	D	PS	Control	U	3
+21-21A-16S	D	Native Grass	Control	U	3
+22-22A-16S	D	SOBI	Biochar	U	3
+23-23A-16S	D	PS	TBA	U	3
+24-24A-16S	D	Native Grass	Biochar	U	3
+25-25A-16S	D	SOBI	TBA	U	3
+26-26A-16S	D	PS	Biochar	U	3
+27-27A-16S	D	Native Grass	TBA	U	3
+28-28A-16S	D	PS	Biochar	U	4
+29-29A-16S	D	Native Grass	Biochar	U	1
+03-3A-16S	D	PS	Control	U	1
+30-30A-16S	D	SOBI	Biochar	U	4
+31-31A-16S	D	PS	TBA	U	4
+32-32A-16S	D	SOBI	Control	U	4
+33-33A-16S	D	Native Grass	TBA	U	4
+34-34A-16S	D	PS	Control	U	4
+35-35A-16S	D	Native Grass	Control	U	4
+36-36A-16S	D	SOBI	TBA	U	4
+37-1B-16S	D	Native Grass	Control	L	1
+38-2B-16S	D	SOBI	Control	L	1
+39-3B-16S	D	PS	Control	L	1
+04-4A-16S	D	Native Grass	TBA	U	1
+40-4B-16S	D	Native Grass	TBA	L	1
+41-5B-16S	D	PS	Biochar	L	1
+42-6B-16S	D	SOBI	TBA	L	1
+43-7B-16S	D	Native Grass	Biochar	L	1
+44-8B-16S	D	PS	TBA	L	1
+45-9B-16S	D	SOBI	Biochar	L	1
+46-10B-16S	D	SOBI	Control	L	1
+47-11B-16S	D	Native Grass	TBA	L	2
+48-12B-16S	D	Native Grass	Biochar	L	2
+49-13B-16S	D	PS	Control	L	2
+05-5A-16S	D	PS	Biochar	U	2
+50-14B-16S	D	SOBI	Biochar	L	2
+51-15B-16S	D	Native Grass	Control	L	2
+52-16B-16S	D	PS	Biochar	L	2
+53-17B-16S	D	SOBI	TBA	L	2
+54-18B-16S	D	PS	TBA	L	2
+55-19B-16S	D	SOBI	Control	L	2
+56-20B-16S	D	PS	Control	L	3
+57-21B-16S	D	Native Grass	Control	L	3
+58-22B-16S	D	SOBI	Biochar	L	4
+59-23B-16S	D	PS	TBA	L	3
+06-6A-16S	D	SOBI	TBA	U	1
+60-24B-16S	D	Native Grass	Biochar	L	2
+61-25B-16S	D	SOBI	TBA	L	3
+62-26B-16S	D	PS	Biochar	L	3
+63-27B-16S	D	Native Grass	TBA	L	3
+64-28B-16S	D	PS	Biochar	L	4
+65-29B-16S	D	Native Grass	Biochar	L	4
+66-30B-16S	D	SOBI	Biochar	L	4
+67-31B-16S	D	PS	TBA	L	4
+68-32B-16S	D	SOBI	Control	L	4
+69-33B-16S	D	Native Grass	TBA	L	4
+07-7A-16S	D	Native Grass	Biochar	U	4
+70-34B-16S	D	PS	Control	L	4
+71-35B-16S	D	Native Grass	Control	L	4
+72-36B-16S	D	SOBI	TBA	L	4
+08-8A-16S	D	PS	TBA	U	1
+09-9A-16S	D	SOBI	Biochar	U	1
